@@ -234,7 +234,7 @@ function reset() {
   d3.selectAll("div.document").remove();
 }
 
-var truncate = function(s) { return s.length > 300 ? s.substring(0, 299) + "..." : s; }
+var truncate = function(s) { return s; return s.length > 300 ? s.substring(0, 299) + "..." : s; }
 
 var wordPattern = XRegExp("\\p{L}[\\p{L}\\p{P}]*\\p{L}", "g");
 
